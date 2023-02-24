@@ -45,22 +45,6 @@ function App() {
   
   return (
     <>
-    {/* <Router>
-    <Navbar title="TextUtils" about="About" toggleMode= {toggleMode} mode={mode}/>
-    <Alert alert = {alert}/>
-    
-    <div className="container my-3">
-    <Routes>
-            <Route exact path="/about">
-              <About/>
-            </Route>
-            <Route exact path="/">
-              <TextForm showAlert = {showAlert} heading="Enter the text"mode={mode} />
-            </Route>
-            
-    </Routes>
-    </div>
-    </Router> */}
     <Router>
       <Navbar title="TextUtils"  about="About" toggleMode= {toggleMode} mode={mode}/>
     <Alert alert = {alert}/>
@@ -78,3 +62,10 @@ function App() {
 }
 
 export default App;
+
+
+{// diasfnnfdiafd
+// hcsaidfsain
+// difandinsa
+// sadkfjsia
+}
