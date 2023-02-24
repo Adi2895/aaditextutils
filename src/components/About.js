@@ -19,7 +19,7 @@ export default function About(props) {
                 </div>
                 <div >
                     TextUtils gives you wide numbers of options to manipulate 
-                    your text in the way want effectively or efficiently.
+                    your text effectively or efficiently.
                 </div>
                 </div>
                 <div class="my-5" style={myStyle}>
