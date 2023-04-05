@@ -3,17 +3,19 @@ import React, { useState } from 'react'
 export default function TextForm(props) {
 
     const handleUpClick = (event) => {
-        // console.log("Uppercase was clicked" + text); 
+        
         let newText = text.toUpperCase();
         setText(newText);
         if(text.length === 0) {
             props.showAlert("Please enter the text" , "danger");
         } else 
         props.showAlert("Convert to upper case." , "secondary"); 
+
+    
     }
 
     const handleOnchange = (event) => {
-        // console.log("on change"); 
+
         setText(event.target.value)
     }
 
@@ -73,7 +75,7 @@ export default function TextForm(props) {
     const [text, setText] = useState("");
     // text = "ujidsfs"; not the correct way to give value
     // setText = ("fdnksdf"); correct way to give value
-   
+
 
     return (
         <>
@@ -85,9 +87,9 @@ export default function TextForm(props) {
                 <button className={`btn btn-${props.mode === 'dark' ? 'secondary' : 'primary'} mx-1 my-1`} onClick={handleUpClick} >Convert to UPPER CASE</button>
                 <button className={`btn btn-${props.mode === 'dark' ? 'secondary' : 'primary'} mx-1 my-1`} onClick={handleLoClick}>Convert to Lower case </button>
                 <button className={`btn btn-${props.mode === 'dark' ? 'secondary' : 'primary'} mx-1 my-1`} onClick={handleAlterClick}>aLtErNaTiNg cAsE</button>
-                <button className={`btn btn-${props.mode === 'dark' ? 'secondary' : 'primary'} mx-1 my-1`} onClick={handleClear}>Clear text</button>
                 <button className={`btn btn-${props.mode === 'dark' ? 'secondary' : 'primary'} mx-1 my-1`} onClick={handleCopy}>Copy text</button>
                 <button className={`btn btn-${props.mode === 'dark' ? 'secondary' : 'primary'} mx-1 my-1`} onClick={handleExtraSpaces}>Extra Space</button>
+                <button className={`btn btn-${props.mode === 'dark' ? 'secondary' : 'danger'} mx-1 my-1`} onClick={handleClear}>Clear text</button>
             </div>
             <div className="container my-3" style={{ color: props.mode === 'dark' ? 'black' : 'white' }}>
                 <h2> Your text summary </h2>
@@ -96,7 +98,6 @@ export default function TextForm(props) {
                 <h2>Preview</h2>
                 <p> {text.length > 0 ? text : "Nothing to preview"}</p>
             </div>
-
         </>
 
     )

@@ -13,7 +13,7 @@ export default function About(props) {
         <>
             <div style={{textAlign:'center'}}>
                 <h2>{props.head}</h2>
-                <div class="my-5" style={myStyle} >
+                <div className="my-5" style={myStyle} >
                 <div>
                     <h5>Analyze your text</h5>
                 </div>
@@ -22,7 +22,7 @@ export default function About(props) {
                     your text effectively or efficiently.
                 </div>
                 </div>
-                <div class="my-5" style={myStyle}>
+                <div className="my-5" style={myStyle}>
                 <div>
                     <h5>Free to use</h5>
                 </div>
@@ -32,7 +32,7 @@ export default function About(props) {
                 can help in removing extra space and much more.
                 </div>
                 </div>
-                <div class="my-5" style={myStyle}>
+                <div className="my-5" style={myStyle}>
                     <div>
                 <h5>Browser compatible</h5> 
                 </div>

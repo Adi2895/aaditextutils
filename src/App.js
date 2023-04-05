@@ -50,10 +50,10 @@ function App() {
     <Alert alert = {alert}/>
     <div className="container my-3">
       <Routes>
-        <Route path="/" element={<TextForm showAlert = {showAlert} heading="Try TextUtils- Word Counter , Character Counter , Remove extra space "mode={mode} />}></Route>
-    {/* <TextForm showAlert = {showAlert} heading="Try TextUtils- Word Counter , Character Counter , Remove extra space "mode={mode} /> */}
-    <Route path="/about" element={<About mode={mode} head="About us"/>}></Route>
-    {/* <About mode={mode} head="About us"/> */}
+        <Route exact path="/" element={<TextForm showAlert = {showAlert} heading="Try TextUtils- Word Counter, Character Counter, Remove extra space" mode={mode} />}></Route>
+    
+    <Route exact path="/about" element={<About mode={mode} head="About us"/>}></Route>
+    
     </Routes>
     </div>
     </Router>
@@ -63,9 +63,3 @@ function App() {
 
 export default App;
 
-
-{// diasfnnfdiafd
-// hcsaidfsain
-// difandinsa
-// sadkfjsia
-}
