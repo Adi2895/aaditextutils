@@ -50,10 +50,10 @@ function App() {
     <Alert alert = {alert}/>
     <div className="container my-3">
       <Routes>
-        <Route exact path="/" element={<TextForm showAlert = {showAlert} heading="Try TextUtils- Word Counter, Character Counter, Remove extra space" mode={mode} />}></Route>
+        <Route path="/" element={<TextForm showAlert = {showAlert} heading="Try TextUtils- Word Counter, Character Counter, Remove extra space" mode={mode} />}></Route>
     
-    <Route exact path="/about" element={<About mode={mode} head="About us"/>}></Route>
-    
+    <Route path="/about" element={<About mode={mode} head="About us"/>}></Route>
+    <Route path= "*" element={<div> Sorry but this page is not on aditextutils.</div>}/>
     </Routes>
     </div>
     </Router>
